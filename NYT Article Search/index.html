@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Article Search</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-auto m-auto">
+                <div class="jumbotron">
+                    <h1>New York Times Search</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-auto m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        Search Parameters
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="searchTerm">Search Term:</label>
+                                <input type="text" class="form-control" id="searchTerm">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="recordsRetrieve">Number of Records to Retrieve: </label>
+                                <select class="form-control" id="recordsRetrieve">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="startYear">Start Year (Optional):</label>
+                                <input type="text" class="form-control" id="startYear">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="endYear">End Year (Optional):</label>
+                                <input type="text" class="form-control" id="endYear">
+                            </div>
+
+                            <button id="search" class="btn btn-primary">Search</button>
+                            <button id="clear" class="btn btn-danger">Clear Results</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Top Articles
+                    </div>
+
+                    <div class="card-body">
+                        <div id="topArticles">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
